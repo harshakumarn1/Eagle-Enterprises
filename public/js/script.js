@@ -128,6 +128,7 @@ const counter = document.querySelectorAll("#counter");
       updateCounter();
     });
 
+<<<<<<< HEAD
 // why choose us
 
 const elements = document.querySelectorAll(".card, .left-content");
@@ -241,3 +242,42 @@ elements.forEach(el => observer.observe(el));
             updateCarousel();
             startAutoSlide();
         });
+=======
+
+
+
+console.log("gfs")
+
+window.addEventListener("load", function () {
+
+  emailjs.init("J7w5N5krSLhz0Hfx_");
+
+  const contactForm = document.getElementById("contact-form");
+
+  if (contactForm) {
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      console.log("Form submitted");
+
+      emailjs.sendForm(
+        "service_z3uxkqj",
+        "template_6s3kjql",
+        this
+      )
+      .then(() => {
+        alert("✅ Message sent successfully!");
+        contactForm.reset();
+      })
+      .catch((error) => {
+        alert("❌ Failed to send message");
+        console.error(error);
+      });
+
+    });
+
+  }
+
+});
+>>>>>>> deae6a8da85849fd69aa15f1818764539a51e4a1

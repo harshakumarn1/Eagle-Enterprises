@@ -10,6 +10,7 @@ const path = require('path')
 app.use(express.static(path.join(__dirname,"/public/css")))
 app.use(express.static(path.join(__dirname,"/public/js")))
 app.use(express.static(path.join(__dirname,"/public/assets")))
+app.use(express.json())
 
 app.listen(port, () => {
     console.log(`API requests listening started on port ${port}`)
