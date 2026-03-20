@@ -127,3 +127,41 @@ const counter = document.querySelectorAll("#counter");
 
       updateCounter();
     });
+
+
+
+
+console.log("gfs")
+
+window.addEventListener("load", function () {
+
+  emailjs.init("J7w5N5krSLhz0Hfx_");
+
+  const contactForm = document.getElementById("contact-form");
+
+  if (contactForm) {
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      console.log("Form submitted");
+
+      emailjs.sendForm(
+        "service_z3uxkqj",
+        "template_6s3kjql",
+        this
+      )
+      .then(() => {
+        alert("✅ Message sent successfully!");
+        contactForm.reset();
+      })
+      .catch((error) => {
+        alert("❌ Failed to send message");
+        console.error(error);
+      });
+
+    });
+
+  }
+
+});
