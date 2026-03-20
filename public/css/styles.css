@@ -1,0 +1,151 @@
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.menu-item {
+    border-bottom: 0;
+}
+.menu-item:hover {
+    border-bottom: 3px solid #f5b105;
+}
+
+.f-2 {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.71)
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 350;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.about-2 {
+  line-height: 1.3em;
+}
+
+/* header dropdown popup */
+
+    .nav1, .nav2 {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Popup */
+    .dropdown1, .dropdown2 {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      height: auto;
+      border-radius: 10px;
+      width: 175px;
+      height: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: none;
+      margin-top: 5px;
+    }
+
+    .dropdown1 p, .dropdown2 p {
+      margin: 0;
+      padding: 10px;
+      /* cursor: pointer; */
+    }
+
+    .dropdown1 p:hover, .dropdown2 p:hover {
+      background-color: #f5b105;
+      color: white;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    /* two text fade down */
+
+    .container {
+      position: relative;
+      height: 40px;
+      overflow: hidden;
+    }
+
+    .text {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+      opacity: 0;
+      transform: translateY(-30px);
+      transition: all 0.6s ease;
+      white-space: nowrap;
+    }
+
+    .text.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* brands carousel */
+
+    .carousel {
+      width: 90%;
+      margin: 50px auto;
+      overflow: hidden;
+      background: #fff;
+      padding: 20px 0;
+      border-radius: 10px;
+    }
+
+    .track {
+      display: flex;  
+      transition: transform 0.6s ease;
+    }
+
+    .item {
+      flex: 0 0 20%; /* 5 items visible */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .item img {
+      width: 100px;
+      filter: grayscale(100%);
+      transition: 0.3s;
+    }
+
+    .item img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.1);
+    }
+
+/* .mail-icon {
+   width: 50px !important;
+} */

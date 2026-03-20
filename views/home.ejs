@@ -1,0 +1,104 @@
+<%- layout("boilerplate.ejs") %>
+
+<section class="hero bg-[url('/fs.png')] bg-cover bg-center w-[100%] h-[100vh] flex">
+    <div class="flex flex-col justify-center w-[100%] h-[100%]">
+     <div class="relative z-2 ml-24">
+         <div class="text-[5rem] font-[bold]">One Stop Solution for</div>
+         <span class="container">
+             <span class="text text-[5rem] font-bold" id="text1">Facility Services</span>
+             <span class="text text-[5rem] font-bold" id="text2">Materials Supply</span>
+         </span>
+     </div>
+     
+     <p class="relative z-2 mt-[8rem] ml-24 w-[50%] mb-4">
+         We specialize in providing professional facility services 
+         and supplying quality materials to meet the operational needs 
+         of businesses across various sectors.
+     </p>
+     <button class="border-1 boder-black ml-24 px-4 py-2 relative z-2 w-[12rem] rounded-[20px] hover:bg-[#f5b10571] hover:scale(1.2)">Explore Services</button>
+     <div class="w-[100%] h-[100vh] absolute bg-white opacity-50 z-1"></div>
+    </div> 
+</section>
+
+<section class="clients">
+     <div class="flex items-center justify-center">
+         <div class="w-[25%] pl-20">
+             <div class="poppins-semibold text-[1.25rem]">Reliable Services</div>
+             <div class="poppins-semibold text-[1.25rem]">Satisfied Customers.</div>
+         </div>
+
+        <div class="carousel w-[75%]">
+             <div class="track" id="track">
+
+         <!-- ORIGINAL -->
+                 <div class="item"><img src="/finolex.webp"></div>
+                 <div class="item"><img src="/halonix_logo.png"></div>
+                 <div class="item"><img src="/osram.jpeg"></div>
+                 <div class="item"><img src="/philips-removebg-preview.png"></div>
+                 <div class="item"><img src="/polycab.jpg"></div>
+                 <div class="item"><img src="/schneider-s-electric.jpg"></div>
+                 <div class="item"><img src="/siemens-removebg-preview.png"></div>
+                 <div class="item"><img src="/syska-led.webp"></div>
+
+             </div>
+        </div>
+
+     </div>
+</section>
+
+<section class="about">
+     <div class="flex px-44 gap-x-8"> 
+         <div class="w-[50%] flex flex-wrap gap-y-6">
+             <div class="w-[48%]"><img class="w-[250px] h-[275px] rounded-[25px] transform-[translateY(20%)]" src="/interior-painting-service12.jpg" alt=""></div>
+             <div class="w-[48%]"><img class="w-[250px] h-[225px] rounded-[25px]" src="/unnamed (1).jpg" alt=""></div>
+             <div class="w-[48%]"><img class="w-[250px] h-[225px] rounded-[25px] transform-[translateY(20%)]" src="/crockery-cutlery-dark-background-copy-space-white-metal-plates-bowls-cups-cutlery-wooden-handles-crockery-16385778345.webp" alt=""></div>
+             <div class="w-[48%]"><img class="w-[250px] h-[275px] rounded-[25px] transform-[translateY(-20%)]" src="/Women-Civil-1-1024x684-1 (1).jpeg" alt=""></div>
+         </div>
+         <div class="w-[50%] flex flex-col gap-y-4">
+             <div class="text-[#FF594B] poppins-semibold">About Company</div>
+             <div class="about-2 text-[#3a4c69] text-4 poppins-bold text-[45px] poppins-semibold">We Are leading facility<br/> and Material supply <br/>providers</div>
+             <p class="text-[#5a5858] my-2">
+             We provide comprehensive solutions tailored to a 
+             variety of industry needs, featuring top brands in 
+             each sector. Through the continuous enhancement of 
+             our products, processes, and workforce, we aim to 
+             become a household name in the facilities management sector.
+             </p> 
+             <div class="flex flex-row gap-x-6 mb-4">
+                     <div class="counter-box flex flex-col items-center">
+                         <div class="flex"><span class="number text-[4rem] text-[#19c6b7] poppins-semibold" data-target="30" id="counter">0</span><span class="text-[4rem] text-[#19c6b7] poppins-semibold">+</span></div>
+                         <div class="text-[#5a5858] text-center">Cities Network Reach</div>
+                     </div>
+                     <div class="counter-box flex flex-col items-center">
+                         <div class="flex"><span class="number text-[4rem] text-[#19c6b7] poppins-semibold" data-target="80"  id="counter">0</span><span class="text-[4rem] text-[#19c6b7] poppins-semibold">+</span></div>
+                         <div class="text-[#5a5858] text-center pr-8">Clients</div>
+                     </div>
+                     <div class="counter-box flex flex-col items-center">
+                         <div class="flex"><span class="number text-[4rem] text-[#19c6b7] poppins-semibold" data-target="200" id="counter">0</span><span class="text-[4rem] text-[#19c6b7] poppins-semibold">+</span></div>
+                         <div class="text-[#5a5858] text-center pr-8">Sites</div>
+                     </div>
+             </div>  
+             <button class="bg-[#3a4c69] text-white py-2 w-[150px]">Know more</button>          
+         </div>
+
+     </div>
+</section>
+
+<section class="services mt-24 relative">
+     <div class="h-[100%]">
+         <div class="w-[100%] h-[100%] absolute bg-black opacity-25 z-1"></div>
+         <div class="py-12 relative z-2">
+             <div class="text-[15px] poppins-regular text-center">Services</div>
+             <div class="text-[4rem] poppins-semibold text-center">The Best Services <br/> We Provide</div>
+         </div>
+         <div class="flex justify-center gap-x-20 pb-20 relative z-2">
+             <div>
+                 <img class="w-100 h-125" src="/fs1.png" alt="">
+             </div>
+             <div>
+                 <img class="w-100 h-125" src="/ms1.png" alt="">
+             </div>
+         </div>
+     </div>
+</section>
+    
